@@ -8,8 +8,12 @@ body {
 
 header,
 footer {
-  background-color: #94d2bd;
+  /* background-color: #94d2bd; */
   text-align: left;
+  background: #b094fd;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #90e6e4, #b094fd);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #90e6e4, #b094fd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 header {
@@ -69,7 +73,8 @@ h1 {
 }
 
 .myButton:hover {
-  background-color: #94d2bd;
+  background-color: #ffffffab;
+  color:#99a1f0;
 }
 
 .myButton:active {
@@ -84,7 +89,7 @@ h2 {
   word-spacing: 5px;
   letter-spacing: 1.5px;
   text-align: left;
-  color: #88c0ad;
+  color: #90e6e4;
   padding: 10px 0px 10px 10px;
 }
 
@@ -119,8 +124,32 @@ footer div {
   font-size: 14px;
   display: flex;
   align-content: center;
-  padding: 10px 20px;
+  justify-content: space-between;
+  padding: 5px 20px;
   color: rgba(255, 255, 255, 0.5);
+}
+
+.copyright {
+  margin: auto 0;
+}
+
+.icons {
+  list-style-type: none;
+  display: inline-flex;
+  font-size: 20px;
+}
+
+.icons a {
+  margin: 0 8px;
+  color: rgb(255, 255, 255, 0.5); /* You can adjust the 0.5 to, say, 0.7 if your icons are too faint */
+}
+
+.icons a:hover {
+  color: rgb(255, 255, 255, 0.8); /* See note above */
+}
+
+a{
+  color:#b094fd;
 }
 
 @media screen and (max-width: 800px){
